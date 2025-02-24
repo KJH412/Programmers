@@ -15,8 +15,8 @@ function solution(X, Y) {
       let x = arrX.filter(x => Number(x) === i).length; 
       let y = arrY.filter(y => Number(y) === i).length; 
       //i가 등장하는 최소 개수만큼 추가 common = ['1']
-      //최소 획수 만큼 repeat , Math.min(2,1) -> 1번 
-      //1 -> '1' ->  '11' -> common에 추가
+      //i의 공통 개수 Math.min()로 결정. 
+      //예를들어 i = 1일 때, x=2, y=1 -> Math.min(2, 1) = 1번만 추가
       common += i.toString().repeat(Math.min(x,y));
     }
     
