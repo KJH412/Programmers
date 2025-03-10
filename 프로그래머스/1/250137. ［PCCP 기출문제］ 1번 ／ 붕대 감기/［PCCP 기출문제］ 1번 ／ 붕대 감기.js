@@ -11,11 +11,11 @@ function solution(bandage, health, attacks) {
         
         if (attackIndex < attacks.length && attacks[attackIndex][0] === time) {
             currentHealth -= attacks[attackIndex][1];
-            success = 0; // 초기화
+            success = 0; 
             attackIndex++; // 다음 공격
 
             if (currentHealth <= 0) {
-                return -1; // 즉시 종료
+                return -1; // 체력 0 종료
             }
         } else {
             // 회복
