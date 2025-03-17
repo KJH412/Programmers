@@ -1,7 +1,6 @@
-function solution(id_list, report, k) {// 유저id, 신고한 유저id, 정지 기준 횟수  4:18~
-    //var answer = [];
+function solution(id_list, report, k) {// 유저id, 신고한 유저id, 정지 기준 횟수
     const newReport = [...new Set(report)]; //중복 제거
-    const result = new Array(id_list.length).fill(0); //받은 메일 개수
+    const result = new Array(id_list.length).fill(0); //유저가 받는 메일 개수 배열
     const count = new Array(id_list.length).fill(0);; //신고 횟수
     const stopId = []; //정지된 id
     
