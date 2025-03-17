@@ -28,16 +28,3 @@ function solution(id_list, report, k) {// 유저id, 신고한 유저id, 정지 �
     
     return result;
 }
-/*
-
-let map = new Map();
-report.forEach(arr => {
-    const [key, value]= arr.split(" ");
-    if(map.has(key)){
-        map.get(key).push(value);
-    }else{
-        map.set(key, [value]);
-    }
-});
-const reportMapObj = Object.fromEntries(map); //{"muzi":["frodo","neo"]}
-*/
