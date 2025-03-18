@@ -2,10 +2,12 @@ function solution(n, w, num) {
     var answer = 0;
     
     let res = 1;
+    
     const h = Math.ceil(n / w); // 총 층 개수
     const target = Math.ceil(num / w); // num이 위치한 층
     const remainBox = n % w || n; // n의 마지막 행에서 남은 개수
     const remainNumBox = num % w || num; // num이 위치한 열 번호
+    
     if (h % 2 === target % 2 && remainBox < remainNumBox) res -= 1;
     if (h % 2 !== target % 2 && remainBox + remainNumBox <= w) res -= 1;
     answer = h - target + res;
