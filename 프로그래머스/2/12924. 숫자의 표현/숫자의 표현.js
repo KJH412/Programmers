@@ -5,7 +5,7 @@ function solution(n) {
         let sum = 0;
         for(let j = i; sum <= n ; j++){ //합이 n과 같으면 끝
             sum += j ;
-            if(sum === n && j >= i){
+            if(sum === n && j >= i){ //1=1도 포함
                 count ++;
                 break;
             }
