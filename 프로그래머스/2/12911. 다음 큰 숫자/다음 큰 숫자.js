@@ -1,7 +1,7 @@
 function solution(n) {
     var answer = 0;
-    //78(1001110)의 다음 큰 숫자는 83(1010011)
-    for(let i=1; i < n; i++){ //break 필요
+    
+    for(let i=1; i < n; i++){ 
         let nextNum = n;
         nextNum +=i;
         if(nextNum.toString(2).split('1').length-1 === n.toString(2).split('1').length-1){
